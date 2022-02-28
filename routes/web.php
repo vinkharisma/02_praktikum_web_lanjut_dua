@@ -1,7 +1,9 @@
 <?php
 
-use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\ArticleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,10 +24,10 @@ Route::get('/', function () {
 // Jobsheet 2 Praktikum 2
 
 // URL : /, PageController : index
-Route::get('/', [PageController::class, 'index']);
+Route::get('/', [HomeController::class, 'index']);
 
 // URL : /about, PageController : about
-Route::get('/about', [PageController::class, 'about']);
+Route::get('/about', [AboutController::class, 'about']);
 
 // URL : /articles/{id}, PageController : articles
-Route::get('/articles/{id}', [PageController::class, 'articles']);
+Route::get('/articles/{id}', [ArticleController::class, 'articles']);
