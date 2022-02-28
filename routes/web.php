@@ -21,13 +21,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Jobsheet 2 Praktikum 2
+// Jobsheet 2 Praktikum 3
 
 // URL : /, PageController : index
 Route::get('/', [HomeController::class, 'index']);
 
-// URL : /about, PageController : about
+// URL : /about, AboutController : about
 Route::get('/about', [AboutController::class, 'about']);
 
-// URL : /articles/{id}, PageController : articles
+// URL : /articles/{id}, ArticleController : articles
 Route::get('/articles/{id}', [ArticleController::class, 'articles']);
