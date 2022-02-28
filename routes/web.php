@@ -21,7 +21,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Jobsheet 2 Praktikum 3
+// Jobsheet 2 Praktikum 2
 
 // URL : /, PageController : index
 Route::get('/', [HomeController::class, 'index']);
