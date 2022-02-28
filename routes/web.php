@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Default route bawaan create project laravel
 Route::get('/', function () {
     return view('welcome');
 });
+
+// Jobsheet 2 Praktikum 2
+
+// URL : /, PageController : index
+Route::get('/', [PageController::class, 'index']);
+
+// URL : /about, PageController : about
+Route::get('/about', [PageController::class, 'about']);
+
+// URL : /articles/{id}, PageController : articles
+Route::get('/articles/{id}', [PageController::class, 'articles']);
