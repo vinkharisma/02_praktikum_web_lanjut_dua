@@ -23,7 +23,7 @@ Route::get('/', function () {
 
 // Jobsheet 2 Praktikum 2
 
-// URL : /, PageController : index
+// URL : /, HomeController : index
 Route::get('/', [HomeController::class, 'index']);
 
 // URL : /about, AboutController : about
